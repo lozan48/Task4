@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<meta charset="UTF-8">
+<title>Task4-HTML</title>
+</head>
+
+<body>
+<button>Click me</button>
+<p id ="TT"></p>
+<script>
+const btn=document.querySelector("button");
+btn.addEventListener("click" , Print);
+
+function Print(){
+const numbers=[];
+let sum=0
+for( let i=0 ; i<=100 ; i++ )
+{
+numbers[i]=i;
+sum+=numbers[i];
+}
+let s="The summation is=";
+document.write(s+sum);
+}
+</script>
+
+</body>
+</html>
